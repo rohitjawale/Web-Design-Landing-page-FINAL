@@ -69,7 +69,7 @@ section {
 .logo  {
 	display:block;
 	color:#ff0066;
-	font-family: 'Pacifico', cursive;
+	font-family:Pacifico;
 	font-size:2em;
 	float:left;
 	margin-left:40px;
