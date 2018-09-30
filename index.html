@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Design UX Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="img/png"  href="fav.png">
+    <link rel="stylesheet" href="main/main.css">
+    <link rel="stylesheet" href="main/main.scss">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+    <!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+   
+    </head>
+<body>   
+    <img src="img/wringsvg.svg" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce"id="wring">
+    <img src="img/circlesvg.svg"data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" id="circle">
+    <img src="img/trisvg.svg"data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" id="tri">
+    <img src="img/linesvg.svg"data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" id="line">
+        <ul>
+                <a href="#" class="logo">graphicsourcepro</a>
+                <li><a href="#"  class="btn2"><span>Sign up</span></a></li>
+                <li><a href="#">Contact</a></li>           
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#" class="active">Home</a></li>
+            </ul>
+            <img src="img/webdesignupdate1.png" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-in-bounce" id="image">
+                 <!--<div class="header" id="headerid">-->
+                    <section class="target3">
+                            <h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Web<br>Design</h1>
+                           <div class="paragraph" id="para"><p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id <br>lobortis felis, in convallis metus. Aliquam suscipit ultrices magna a dignissim.<br> Aenean aliquam risus non quam<br></p>
+                            </div>
+                            <a href="#" class="button"  data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-up-bounce" ><span>Get started</span></a>
+                           </div>   
+                    </section>
+                <section class="target2">
+                    <div class="left" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+                        <h3>Web Design & UX</h3>
+                        <p>A successful site should be designed around aesthetics and usability. Because good web design has a positive impact on conversion.</p>
+                        <button id="button3">View more</button>
+                    </div>
+                    <div class="right" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="600" data-sal-easing="ease-out-bounce">
+                        <img src="img/swipe.svg">      
+                    </div>
+                </section>
+                <section class="target">
+                    <div class="one" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+                        <h3>Keep</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    </div>
+                    <div class="two" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out-bounce">
+                        <h3>It</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    </div>
+                    <div class="three" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+                        <h3>Scrolling</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    </div>
+                    <button id="button2">Click me</button>
+                </section>
+                <script src="./node_modules/sal.js/dist/sal.js"></script>
+            
+                <script type="module">
+                    import jump from './node_modules/jump.js/dist/jump.module.js';
+                    
+                 sal({
+                    once: false,
+                });
+            
+                    var button = document.getElementById('button');
+            
+                    button.addEventListener('click', function (event) { 
+                        jump('.target')
+                    });
+            
+                    button2.addEventListener('click', function (event) { 
+                        jump('.target2', {
+                            duration: 2000,
+                        })
+                    });
+            
+                    button3.addEventListener('click', function (event) { 
+                        jump('.target3', {
+                            duration: 2000,
+                            offset: 100,
+                            easing: easeInOutQuad,
+                            callback: () => {
+                                console.log('Completed!')
+                            }
+                        })
+                    });
+            
+            
+                </script>
+                               
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
