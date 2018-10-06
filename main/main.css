@@ -2,9 +2,6 @@ body html {
 	height: 100vh;
 	margin: 0;
 }
-body {
-	font-family: Product sans;
-}
 section {
 	height: calc(100vh - 8em);
 	-webkit-box-align: center;
